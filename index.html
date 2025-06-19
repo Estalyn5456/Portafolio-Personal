@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Portafolio/style.css">
+  <title>Mi Portafolio Web Personal - Estalyn Ortega</title>
+</head>
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL DE LA PÁGINA -->
+  <div class="container">
+    <header>
+      <h1>Yordan Estalyn Ortega Veliz</h1>
+      <p>No existen límites, los límites los pones tú mismo</p> 
+      <!-- Imagen de presentación personal -->
+      <img src="/Portafolio/Mi icono animado.jpg" alt="Mi foto personal" width="200">
+    </header>
+  </div>
+  <br>
+
+  <!-- UN MENÚ DE NAVEGACIÓN RÁPIDA -->
+  <nav>
+      <strong><mark><b>OPCIONES RÁPIDAS</b></mark></strong>
+      <br>
+      <br>
+    <ul>
+      <li><a href="#intereses">Mis intereses</a></li>
+      <li><a href="#habilidades">Mis habilidades</a></li>
+      <li><a href="#multimedia">Área de video o audio informativo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <br>
+
+  <!-- SECCIÓN SOBRE UN POCO DE MÍ MISMO -->
+  <section id="sobremí">
+    <h2>Un poco sobre mí mismo</h2>
+    <p>
+      Hola, mi nombre es <strong>Yordan Estalyn Ortega Veliz</strong>. Soy estudiante de <em>Ingeniería en Sistemas</em> en la Universidad Técnica de Babahoyo...
+    </p>
+  </section>
+
+  <br>
+
+  <!-- INTERESES Y LOGROS -->
+  <section id="intereses">
+    <h2>Mis intereses y logros</h2>
+    <ul>
+      <li>Logré ingresar a la universidad que quería y en la carrera que quería</li>
+      <li>Me interesa aprender a programar como un profesional...</li>
+      <li>Curiosidades sobre seguridad informática</li>
+      <li>Agradecimiento a mis padres por su apoyo</li>
+      <li>Me esfuerzo por mejorar tras errores</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <!-- HABILIDADES EN UNA TABLA -->
+  <section id="habilidades">
+    <h2>Mis habilidades respecto a mi semestre actual</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th><mark>Habilidades</mark></th>
+          <th><mark>Nivel de habilidad</mark></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Progamacion orientada a objetos</td><td>Básico</td></tr>
+        <tr><td>Cálculo de varias variables</td><td>Básico</td></tr>
+        <tr><td>Desarrollo basado en plataformas</td><td>Básico</td></tr>
+        <tr><td>Técnicas de expresión oral y escrita</td><td>Moderado</td></tr>
+        <tr><td>Arquitectura del computador</td><td>Simple</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="2">Tabla de habilidades</td></tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <br>
+
+  <!-- MULTIMEDIA:UN AUDIO PERSONAL -->
+  <section id="multimedia">
+    <h2>Grabación de presentación personal</h2>
+    <audio controls>
+      <source src="/Portafolio/audio informativo.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </section>
+
+  <br>
+
+  <!-- FORMULARIO AVANZADO -->
+  <section id="formulario-avanzado">
+    <h2>Formulario Avanzado</h2>
+    <form>
+      <fieldset>
+        <legend>INFORMACIÓN PERSONAL</legend>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Estalyn Ortega" required><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="10 dígitos" required><br>
+
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br>
+      </fieldset>
+
+      <!-- Campo para seleccionar un lenguaje en el formulario -->
+      <fieldset>
+        <legend>PREFERENCIAS</legend>
+        <label for="lenguajes">Lenguajes que dominas:</label><br>
+        <select id="lenguajes" name="lenguajes" multiple required>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+          <option value="java">Java</option>
+          <option value="Python">Python</option>
+          <option value="Otros">Otros</option>
+        </select><br><br>
+
+        <!-- Aceptación de términos y condiciones -->
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label><br><br>
+      </fieldset>
+
+      <!-- Botón para enviar el formulario -->
+      <input type="submit" value="Enviar datos">
+    </form>
+  </section>
+
+      <!-- Sección del contacto personal -->
+  <section id="contacto">
+      <h2>Redes sociales</h2>
+        <ul>      
+          <li><a href="https://web.facebook.com/estalyn.ortega.2025"><img src="/img/icono facebook.webp" alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/estalyn5456/"><img src="/img/icono instagram.webp" alt="Instagram"></a></li>
+        </ul> 
+  </section>
+      <address>
+        <p>© Todos los derechos reservados</p>
+      </address>
+</body>
+</html>

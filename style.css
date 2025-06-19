@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+  margin: 0; /* Elimina márgenes predeterminados de todos los elementos */
+  padding: 0; /* Elimina relleno predeterminado */
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
+}
+
+/* Estilo del body */
+body {
+  background: #f2f4f8; /* Color de fondo suave */
+  color: #333; /* Color del texto principal */
+  line-height: 1.6; /* Altura de línea cómoda para lectura */
+  padding: 20px; /* Relleno alrededor del contenido principal */
+}
+
+/* Estilo del Header */
+header {
+  text-align: center; /* Centra el texto del encabezado */
+  background: #1e2a38; /* Fondo oscuro del encabezado */
+  color: #fff; /* Texto blanco */
+  padding: 30px 10px; /* Relleno del encabezado */
+  border-radius: 12px; /* Bordes redondeados */
+}
+
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 20px; /* Espaciado interno */
+}
+
+header img {
+  border-radius: 10%; /* Bordes redondeados de la imagen */
+  margin-top: 15px; /* Separación superior */
+  width: 150px; /* Ancho fijo de la imagen */
+  height: auto; /* Altura automática */
+  border: 3px solid #fff; /* Borde blanco */
+}
+
+/* Navegación, opciones rapidas */
+nav {
+  margin: 20px auto; /* Separación y centrado */
+  text-align: center; /* Centrado de texto */
+}
+
+
+nav ul {
+  display: flex; /* Flexbox para colocar elementos en línea */
+  flex-wrap: wrap; /* Permite que pasen a otra línea si es necesario */
+  justify-content: center; /* Centra horizontalmente */
+  list-style: none; /* Quita los puntos de la lista */
+  gap: 10px; /* Espacio entre elementos */
+}
+
+nav a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  padding: 10px 15px; /* Relleno interno del botón */
+  background: #007acc; /* Color de fondo azul */
+  color: #fff; /* Texto blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background 0.3s; /* Transición suave al pasar el mouse */
+  border: 2px solid #333;
+
+}
+
+nav a:hover {
+  background: #005e99; /* Color más oscuro al pasar el mouse */
+}
+
+/* Secciones */
+section {
+  background: #fff; /* Fondo blanco para secciones */
+  margin: 20px auto; /* Separación y centrado */
+  padding: 20px; /* Relleno interno */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Sombra suave */
+  max-width: 900px; /* Ancho máximo */
+}
+
+section h2 {
+  margin-bottom: 15px; /* Separación debajo del título */
+  color: #007acc; /* Color del título */
+}
+
+/* Tabla de habilidades */
+table {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border-collapse: collapse; /* Une bordes de las celdas */
+  margin-top: 10px; /* Separación superior */
+}
+
+table, th, td {
+  border: 1px solid #ccc; /* Bordes grises */
+}
+
+th, td {
+  padding: 10px; /* Relleno interno */
+  text-align: center; /* Centrado del texto */
+}
+
+tfoot td {
+  font-weight: bold; /* Texto en negrita */
+  background-color: #f1f1f1; /* Fondo gris claro */
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column; /* Disposición vertical */
+  gap: 20px; /* Espacio entre campos */
+}
+
+fieldset {
+  border: 2px solid #007acc; /* Borde azul */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 15px; /* Relleno interno */
+}
+
+legend {
+  font-weight: bold; /* Título en negrita */
+  color: #007acc; /* Color azul */
+}
+
+input, select {
+  padding: 10px; /* Relleno */
+  width: 100%; /* Ocupa todo el ancho */
+  margin-top: 5px; /* Separación superior */
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 6px; /* Bordes redondeados */
+}
+
+input[type="submit"] {
+  background: #007acc; /* Fondo azul */
+  color: white; /* Texto blanco */
+  cursor: pointer; /* Cursor en forma de mano */
+  font-weight: bold; /* Negrita */
+  border: none; /* Sin borde */
+  transition: background 0.3s ease; /* Transición suave */
+}
+
+input[type="submit"]:hover {
+  background: #005e99; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Sección de contacto con iconos */
+#contacto ul {
+  display: flex; /* Mostrar los íconos en fila */
+  justify-content: center; /* Centrado horizontal */
+  gap: 20px; /* Espacio entre íconos */
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Eliminar padding por defecto */
+  margin-top: 10px; /* Separación superior */
+}
+
+#contacto ul li img {
+  width: 60px; /* Tamaño reducido del icono */
+  height: 60px;
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+#contacto ul li img:hover {
+  transform: scale(1.5); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* En móviles se apilan verticalmente */
+  }
+
+  header img {
+    width: 120px; /* Imagen más pequeña en dispositivos pequeños */
+  }
+
+  section, header {
+    padding: 15px; /* Menos relleno para móviles */
+  }
+}
